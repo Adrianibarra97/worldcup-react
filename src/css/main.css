@@ -1,0 +1,100 @@
+:root {
+	--footerColor: #1c2b2d;
+	--backgroundColor: #e6d5b8;
+	--primaryColor: #1f6f8b;
+	--secondaryColor: #99a8b2;
+	--backgroundLoginColor: white;
+	--userProfileColor: beige;
+	--fontFamily: 'Times New Roman';
+	--borderBoard: #800000;
+}
+
+body{
+	height: 100vh;
+}
+*,body {
+	padding: 0;
+	margin:0;
+	box-sizing: border-box;
+}
+
+.main {
+	display: block;
+	min-height: 90vh;
+	padding-bottom: 10vh;
+	width: 100%;
+	overflow: hidden;
+	background-color: var(--backgroundColor);
+}
+
+.content__item--color{
+	color:red;
+}
+
+.content__item--enabled{
+	color:grey
+}
+
+.label-for-checkbox{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.input_checkbox{
+	margin-right: 5px;
+	width: 18px;
+	height: 18px;
+}
+
+.button-fixed{
+	display: flex;
+	position: fixed;
+	bottom: 12vh;
+	right: 10px;
+	height: 50px;
+	width: 50px;
+	justify-content: center;
+	align-items: center;
+	font-weight: bolder;
+	border: 1px solid var(--primaryColor);
+	border-radius:50%;
+	color: var(--backgroundColor);
+	background-color: var(--footerColor);	
+}
+
+.footer,
+.navigation {
+	display: flex;
+	position: fixed;
+	bottom: 0;
+	height: 10vh;
+	width: 100%;
+	padding: 1.1rem;
+	font-size: 1.25rem;
+	font-family: var(--fontFamily);
+	background-color: var(--footerColor);
+	color: var(--backgroundColor);
+	justify-content: center;
+	align-items: center;
+}
+
+.navigation__item {
+	padding: 0 1em;
+}
+
+.navigation__item:active {
+	color: var(--primaryColor)
+}
+
+.footer__i--facebook {
+	margin-right: 1.1rem;
+}
+
+.footer__span--label {
+    font-weight: bolder;
+}
+
+.location__color {
+	color: var(--backgroundColor)
+}
